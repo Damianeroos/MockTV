@@ -13,15 +13,15 @@ enum class button {
 };
 
 class tv_controller {
-public:
+ public:
   tv_controller(TV &tv, bool has_battery = true)
-    : m_has_battery(has_battery), m_tv(tv){};
+      : m_has_battery(has_battery), m_tv(tv){};
   virtual ~tv_controller(){};
-  virtual  void push_button(button);
-  virtual  void type_number(int arg) { m_tv.change_channel(arg); }
+  virtual void push_button(button);
+  virtual void type_number(int arg) { m_tv.change_channel(arg); }
   virtual void set_battery() { m_has_battery = true; };
 
-private:
+ private:
   bool m_has_battery;
   TV &m_tv;
 };

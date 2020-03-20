@@ -6,5 +6,5 @@ CXX_FLAGS =  -pedantic -Wall -Wextra -pthread   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include 
+CXX_INCLUDES = 
 

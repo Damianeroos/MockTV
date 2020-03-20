@@ -5,8 +5,9 @@ project(${THIS})
 
 set(CMAKE_CXX_STANDARD 14)
 SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -pedantic -Wall -Wextra -pthread")
+
 find_package(GTest REQUIRED)
-include_directories(${GTEST_INCLUDE_DIRS})
+
 set(DO_CLANG_FORMAT clang-format)
 set(CLANG_OPT "-i")
 
