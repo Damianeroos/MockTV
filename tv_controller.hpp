@@ -18,7 +18,7 @@ class tv_controller {
       : m_has_battery(has_battery), m_tv(tv){};
   virtual ~tv_controller(){};
   virtual bool push_button(button);
-  virtual void type_number(int arg) { m_tv.change_channel(arg); }
+  virtual bool type_number(int arg) { if(!m_has_battery) return false; m_tv.change_channel(arg); return true;}
   virtual void set_battery() { m_has_battery = true; };
 
  private:
