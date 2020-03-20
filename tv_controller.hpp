@@ -17,7 +17,7 @@ class tv_controller {
   tv_controller(TV &tv, bool has_battery = true)
       : m_has_battery(has_battery), m_tv(tv){};
   virtual ~tv_controller(){};
-  virtual void push_button(button);
+  virtual bool push_button(button);
   virtual void type_number(int arg) { m_tv.change_channel(arg); }
   virtual void set_battery() { m_has_battery = true; };
 
@@ -26,8 +26,8 @@ class tv_controller {
   TV &m_tv;
 };
 
-void tv_controller::push_button(button arg) {
-  if (!m_has_battery) return;
+bool tv_controller::push_button(button arg) {
+  if (!m_has_battery) return false;
 
   switch (arg) {
     case button::VOLUME_UP:
@@ -49,4 +49,5 @@ void tv_controller::push_button(button arg) {
       m_tv.change_to_next_channel(-1);
       break;
   }
+  return true;
 }

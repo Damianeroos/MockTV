@@ -1,12 +1,20 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-#include "MockTvController.hpp"
-#include "TV.hpp"
+#include "MockTV.hpp"
+#include "tv_controller.hpp"
+
+using ::testing::Return;
 
 TEST(TvTest, CanSwichON) {
-  TV tv;
-  MockTvController controller(tv, false);
-  EXPECT_CALL(controller, push_button(button::ON)).Times(1);
+  MockTV tv;
+  tv_controller controller(tv);
 
-  EXPECT_TRUE(tv.turn_on());
+  EXPECT_CALL(tv, turn_on())
+      .Times(3)
+      .WillOnce(Return(true))
+      .WillRepeatedly(Return(false));
+
+  EXPECT_TRUE(controller.push_button(button::ON));
+  EXPECT_TRUE(controller.push_button(button::ON));
+  EXPECT_TRUE(controller.push_button(button::ON));
 }

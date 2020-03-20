@@ -6,18 +6,18 @@
 class TV {
  public:
   TV() : m_volume(MAX_VOLUME / 2), m_channel(0), m_has_power(false){};
-
-  bool turn_on() {
+  virtual ~TV(){};
+  virtual bool turn_on() {
     if (m_has_power) return false;
     return (m_has_power = true);
   };
-  bool turn_off() {
+  virtual bool turn_off() {
     if (!m_has_power) return false;
     return (m_has_power = false);
   };
-  bool change_volume(int);
-  bool change_channel(int);
-  bool change_to_next_channel(int);
+  virtual bool change_volume(int);
+  virtual bool change_channel(int);
+  virtual bool change_to_next_channel(int);
 
  private:
   int m_volume;
