@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/tv_mock.dir/main.cpp.o  -o tv_mock 

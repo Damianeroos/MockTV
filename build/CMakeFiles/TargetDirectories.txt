@@ -1,0 +1,5 @@
+/home/damian/Pulpit/staz/MockTV/build/CMakeFiles/rebuild_cache.dir
+/home/damian/Pulpit/staz/MockTV/build/CMakeFiles/format.dir
+/home/damian/Pulpit/staz/MockTV/build/CMakeFiles/edit_cache.dir
+/home/damian/Pulpit/staz/MockTV/build/CMakeFiles/tv_mock.dir
+/home/damian/Pulpit/staz/MockTV/build/CMakeFiles/start.dir
