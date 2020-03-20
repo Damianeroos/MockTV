@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tv_mock.dir/main.cpp.o"
+  "CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o"
   "tv_mock.pdb"
   "tv_mock"
 )

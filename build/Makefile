@@ -149,32 +149,32 @@ start/fast:
 	$(MAKE) -f CMakeFiles/start.dir/build.make CMakeFiles/start.dir/build
 .PHONY : start/fast
 
-main.o: main.cpp.o
+test_MockTvController.o: test_MockTvController.cpp.o
 
-.PHONY : main.o
+.PHONY : test_MockTvController.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/main.cpp.o
-.PHONY : main.cpp.o
+test_MockTvController.cpp.o:
+	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o
+.PHONY : test_MockTvController.cpp.o
 
-main.i: main.cpp.i
+test_MockTvController.i: test_MockTvController.cpp.i
 
-.PHONY : main.i
+.PHONY : test_MockTvController.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/main.cpp.i
-.PHONY : main.cpp.i
+test_MockTvController.cpp.i:
+	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/test_MockTvController.cpp.i
+.PHONY : test_MockTvController.cpp.i
 
-main.s: main.cpp.s
+test_MockTvController.s: test_MockTvController.cpp.s
 
-.PHONY : main.s
+.PHONY : test_MockTvController.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/main.cpp.s
-.PHONY : main.cpp.s
+test_MockTvController.cpp.s:
+	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/test_MockTvController.cpp.s
+.PHONY : test_MockTvController.cpp.s
 
 # Help Target
 help:
@@ -187,9 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... tv_mock"
 	@echo "... start"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... test_MockTvController.o"
+	@echo "... test_MockTvController.i"
+	@echo "... test_MockTvController.s"
 .PHONY : help
 
 

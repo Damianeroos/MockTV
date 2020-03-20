@@ -57,39 +57,40 @@ include CMakeFiles/tv_mock.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tv_mock.dir/flags.make
 
-CMakeFiles/tv_mock.dir/main.cpp.o: CMakeFiles/tv_mock.dir/flags.make
-CMakeFiles/tv_mock.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Pulpit/staz/MockTV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tv_mock.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tv_mock.dir/main.cpp.o -c /home/damian/Pulpit/staz/MockTV/main.cpp
+CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o: CMakeFiles/tv_mock.dir/flags.make
+CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o: ../test_MockTvController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Pulpit/staz/MockTV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o -c /home/damian/Pulpit/staz/MockTV/test_MockTvController.cpp
 
-CMakeFiles/tv_mock.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tv_mock.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Pulpit/staz/MockTV/main.cpp > CMakeFiles/tv_mock.dir/main.cpp.i
+CMakeFiles/tv_mock.dir/test_MockTvController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tv_mock.dir/test_MockTvController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Pulpit/staz/MockTV/test_MockTvController.cpp > CMakeFiles/tv_mock.dir/test_MockTvController.cpp.i
 
-CMakeFiles/tv_mock.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tv_mock.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Pulpit/staz/MockTV/main.cpp -o CMakeFiles/tv_mock.dir/main.cpp.s
+CMakeFiles/tv_mock.dir/test_MockTvController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tv_mock.dir/test_MockTvController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Pulpit/staz/MockTV/test_MockTvController.cpp -o CMakeFiles/tv_mock.dir/test_MockTvController.cpp.s
 
-CMakeFiles/tv_mock.dir/main.cpp.o.requires:
+CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.requires:
 
-.PHONY : CMakeFiles/tv_mock.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.requires
 
-CMakeFiles/tv_mock.dir/main.cpp.o.provides: CMakeFiles/tv_mock.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/tv_mock.dir/main.cpp.o.provides
+CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.provides: CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tv_mock.dir/build.make CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.provides.build
+.PHONY : CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.provides
 
-CMakeFiles/tv_mock.dir/main.cpp.o.provides.build: CMakeFiles/tv_mock.dir/main.cpp.o
+CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.provides.build: CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o
 
 
 # Object files for target tv_mock
 tv_mock_OBJECTS = \
-"CMakeFiles/tv_mock.dir/main.cpp.o"
+"CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o"
 
 # External object files for target tv_mock
 tv_mock_EXTERNAL_OBJECTS =
 
-tv_mock: CMakeFiles/tv_mock.dir/main.cpp.o
+tv_mock: CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o
 tv_mock: CMakeFiles/tv_mock.dir/build.make
+tv_mock: /usr/local/lib/libgtest.a
 tv_mock: CMakeFiles/tv_mock.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/damian/Pulpit/staz/MockTV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tv_mock"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tv_mock.dir/link.txt --verbose=$(VERBOSE)
@@ -99,7 +100,7 @@ CMakeFiles/tv_mock.dir/build: tv_mock
 
 .PHONY : CMakeFiles/tv_mock.dir/build
 
-CMakeFiles/tv_mock.dir/requires: CMakeFiles/tv_mock.dir/main.cpp.o.requires
+CMakeFiles/tv_mock.dir/requires: CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o.requires
 
 .PHONY : CMakeFiles/tv_mock.dir/requires
 

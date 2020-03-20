@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/tv_mock.dir/main.cpp.o  -o tv_mock 
+/usr/bin/c++   -pedantic -Wall -Wextra -pthread   CMakeFiles/tv_mock.dir/test_MockTvController.cpp.o  -o tv_mock /usr/local/lib/libgtest.a -lgtest_main -lgmock -lgtest 
