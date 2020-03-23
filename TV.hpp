@@ -2,6 +2,7 @@
 
 #define MAX_CHANNEL 99
 #define MAX_VOLUME 100
+#include <iostream>
 
 class TV {
  public:
@@ -9,15 +10,17 @@ class TV {
   virtual ~TV(){};
   virtual bool turn_on() {
     if (m_has_power) return false;
-    return (m_has_power = true);
+    m_has_power = true;
+    return true;
   };
   virtual bool turn_off() {
     if (!m_has_power) return false;
-    return (m_has_power = false);
+    m_has_power = false;
+    return true;
   };
-  virtual bool change_volume(int);
-  virtual bool change_channel(int);
-  virtual bool change_to_next_channel(int);
+  virtual bool change_volume(int arg);
+  virtual bool change_channel(int arg);
+  virtual bool change_to_next_channel(int arg);
 
  private:
   int m_volume;
@@ -26,6 +29,9 @@ class TV {
 };
 
 bool TV::change_volume(int arg) {
+  if (!m_has_power) {
+    return false;
+  }
   if (m_volume + arg < 0 || m_volume + arg > MAX_VOLUME) return false;
 
   m_volume += arg;
@@ -33,6 +39,8 @@ bool TV::change_volume(int arg) {
 }
 
 bool TV::change_to_next_channel(int arg) {
+  if (!m_has_power) return false;
+
   m_channel += arg;
 
   if (m_channel < 0) m_channel = MAX_CHANNEL;
@@ -43,6 +51,8 @@ bool TV::change_to_next_channel(int arg) {
 }
 
 bool TV::change_channel(int arg) {
+  if (!m_has_power) return false;
+
   if (arg > MAX_CHANNEL || arg < 0) return false;
 
   m_channel = arg;

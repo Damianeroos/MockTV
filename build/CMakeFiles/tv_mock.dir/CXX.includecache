@@ -13,6 +13,8 @@ TV.hpp
 /home/damian/Pulpit/staz/MockTV/TV.hpp
 
 /home/damian/Pulpit/staz/MockTV/TV.hpp
+iostream
+-
 
 /home/damian/Pulpit/staz/MockTV/test_MockTvController.cpp
 gmock/gmock.h

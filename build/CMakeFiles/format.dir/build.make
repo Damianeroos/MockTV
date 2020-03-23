@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/damian/Pulpit/staz/MockTV/build
 include CMakeFiles/format.dir/progress.make
 
 CMakeFiles/format:
-	clang-format -i ../tv_controller.hpp ../TV.hpp ../MockTvController.hpp ../test_MockTvController.cpp
+	clang-format -i ../tv_controller.hpp ../TV.hpp ../MockTV.hpp ../test_MockTvController.cpp
 
 format: CMakeFiles/format
 format: CMakeFiles/format.dir/build.make

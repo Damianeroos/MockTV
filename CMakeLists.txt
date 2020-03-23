@@ -18,7 +18,7 @@ add_custom_target(format COMMAND
     ${DO_CLANG_FORMAT} ${CLANG_OPT}
   ../tv_controller.hpp
   ../TV.hpp
-  ../MockTvController.hpp
+  ../MockTV.hpp
   ../test_MockTvController.cpp
   )
 

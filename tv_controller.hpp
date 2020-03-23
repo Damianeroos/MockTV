@@ -16,10 +16,14 @@ class tv_controller {
  public:
   tv_controller(TV &tv, bool has_battery = true)
       : m_has_battery(has_battery), m_tv(tv){};
-  virtual ~tv_controller(){};
-  virtual bool push_button(button);
-  virtual bool type_number(int arg) { if(!m_has_battery) return false; m_tv.change_channel(arg); return true;}
-  virtual void set_battery() { m_has_battery = true; };
+  ~tv_controller(){};
+  bool push_button(button);
+  bool type_number(int arg) {
+    if (!m_has_battery) return false;
+    m_tv.change_channel(arg);
+    return true;
+  }
+  void set_battery() { m_has_battery = true; };
 
  private:
   bool m_has_battery;
